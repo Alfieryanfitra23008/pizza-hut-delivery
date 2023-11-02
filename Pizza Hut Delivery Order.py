@@ -40,3 +40,36 @@ daftar_ukuran = {
 nama_topping = daftar_topping[topping]
 nama_crust = daftar_crust[crust]
 nama_ukuran = daftar_ukuran[ukuran]
+
+#deklarasi harga awal = 0 rupiah
+harga = 0
+
+#fungsi if untuk harga crust Pan beserta dengan harga per ukuran pizza
+if crust == 1:
+    harga +=43637 #harga crust Pan
+    if ukuran == 1:
+        harga += 0 #harga jika ukuran personal
+    elif ukuran == 2:
+        harga += 57273 #harga jika ukuran legular
+    else:
+        harga += 89091 #harga jika ukuran large
+
+#fungsi if untuk harga crust StuffedCrust Cheese beserta dengan harga per ukuran pizza
+elif crust == 2:
+    harga += 55455 #harga crust StuffedCrust Cheese
+    if ukuran == !:
+        harga += 0 #harga jika ukuran personal
+    elif ukuran == 2:
+        harga += 65455 #harga jika ukuran legular
+    else:
+        harga += 104545 #harga jika ukuran large
+
+#fungsi if untuk harga crust StuffedCrust Sausage beserta dengan harga per ukuran pizza
+elif crust == 3:
+    harga += 52728 #harga crust StuffedCrust Sausage
+    if ukuran == 1:
+        harga += 0 #harga jika ukuran personal
+    elif ukuran == 2:
+        harga += 64545 #harga jika ukuran legular
+    else:
+        harga += 102727 #harga jika ukuran large
