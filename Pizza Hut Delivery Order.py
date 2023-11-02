@@ -57,7 +57,7 @@ if crust == 1:
 #fungsi if untuk harga crust StuffedCrust Cheese beserta dengan harga per ukuran pizza
 elif crust == 2:
     harga += 55455 #harga crust StuffedCrust Cheese
-    if ukuran == !:
+    if ukuran == 1:
         harga += 0 #harga jika ukuran personal
     elif ukuran == 2:
         harga += 65455 #harga jika ukuran legular
@@ -73,3 +73,43 @@ elif crust == 3:
         harga += 64545 #harga jika ukuran legular
     else:
         harga += 102727 #harga jika ukuran large
+
+#fungsi if untuk harga crust Cheesy Bites beserta dengan harga per ukuran pizza
+elif crust == 4:
+    harga += 57273 #harga crust Cheesy Bites
+    if ukuran == 1:
+        harga += 0 #harga jika ukuran personal
+    elif ukuran == 2:
+        harga += 66364 #harga jika ukuran reguler
+    else:
+        harga += 107273 #harga jika ukuran large
+
+#fungsi if untuk harga crust Crown Crust beserta dengan harga per ukuran pizza
+else:
+    harga += 55455 #harga crust Crown Crust
+    if ukuran == 1:
+        harga += 0 #harga jika ukuran personal
+    elif ukuran == 2:
+        harga += 65455 #harga jika ukuran reguler
+    else:
+        harga += 104545 #harga jika ukuran large
+
+#fungsi if untuk jika pelanggan ingin menambahkan Extra Cheese beserta harga per ukuran pizza
+if xtracz == "Y":
+    xtraczif = "Dengan Tambahan Extra Cheese"
+    if ukuran == 1:
+        harga += 13636 #harga jika ukuran personal
+    elif ukuran == 2:
+        harga += 16364 #harga jika ukuran reguler
+    else:
+        harga += 19091 #harga jika ukuran large
+else:
+    xtraczif = "Tanpa Tambahan Extra Cheese"
+
+#print tampilan bill
+print(f"Topping : {nama_topping}") #menampilkan nama topping yang dipilih
+print(f"Crust : {nama_crust}") #menampilkan nama crust yang dipilih
+print(f"Ukuran : {nama_ukuran}") #menampilkan nama ukuran yang dipilih
+print(xtraczif) #menampilkan hasil apakah pelanggan menambahkan Extra Cheese atau tidak
+print("Total Harga = Rp. {:,.2f}".format(harga)) #menampilkan harga total
+print("Terima Kasih Atas Kunjungan Anda")
